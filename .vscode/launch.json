@@ -1,0 +1,63 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/test/remesh",
+            "args": [
+                "-i",
+                // "/home/ltr/paperspace/remesh/robust/test/smooth4_remeshed.vtk",
+                // "/home/ltr/paperspace/remesh/robust/test_error/285603.obj",
+                "/home/ltr/Test/zhuhai/plane.o_remeshed.vtk",
+                // "-e",
+                // "1e-3",
+                // "--mu",
+                // "0",
+                // "--ltr",
+                // "822",
+                // "--no-qulity",
+                // "--no-feature",
+                // "--octree",
+                // "2",
+                // "--beta",
+                // "1.1" 
+                // "-i",
+                // "/home/ltr/workspace/LTRemesh/file/1172870/intersection3.vtk"
+                // "-i",
+                // "/home/ltr/workspace/LTRemesh/file/z2/z2.vtk",
+                // "-o",
+                // "/home/ltr/workspace/LTRemesh/file/fillet/remesh2.vtk",
+                "--iteration",
+                "1",
+                "--split",
+                "0",
+                "--smooth",
+                "0",
+                "--collapse",
+                "0"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",    // Working dirctory
+            "preLaunchTask": "build",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "sourceFileMap": {
+                "/build/glibc-S7xCS9": "/usr/src/glibc"
+            },
+	"miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}

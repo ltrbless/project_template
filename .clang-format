@@ -1,0 +1,6 @@
+# Docs:
+# http://clang.llvm.org/docs/ClangFormatStyleOptions.html
+
+# The style used for all options not specifically set in the configuration.
+# Available options: LLVM, Google, Chromium, Mozilla, WebKit
+BasedOnStyle: Google
